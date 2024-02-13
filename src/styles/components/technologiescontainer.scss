@@ -1,0 +1,77 @@
+@use '../variables';
+@use '../mixins';
+
+.technologies-container {
+    margin-bottom: 1rem;
+
+    .technologies-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+
+        .technology-card {
+            @include mixins.center;
+            gap: 1rem;
+            padding: 1rem;
+            border: 1px solid #333;
+            width: 45%;
+            border-radius: variables.$card-border-radius ;
+
+            h3 {
+                color: variables.$text-color;
+                margin-bottom: 1rem;
+            }
+
+            svg {
+                font-size: 6rem;
+            }
+        }
+        #git {
+            svg {
+                color: #ff0000;
+            }
+        }
+        #html{
+            svg {
+                color: #ececec;
+            }
+        }
+        #swift{
+            svg {
+                color: #48d11e;
+            }
+        }
+        #typescript{
+            svg {
+                color: #007acc;
+            }
+        }
+        #css {
+            svg {
+                color: #E44D26;
+            }
+        }
+        #js {
+            svg {
+                color: #f0db4f;
+            }
+        }
+        #sass {
+            svg {
+                color: #585858;
+            }
+        }
+        #react {
+            svg {
+                color: #61dafb;
+            }
+        }
+        #canva, #trello{
+            svg {
+                color: #3382b6;
+            }
+        }
+        
+
+    }
+}
